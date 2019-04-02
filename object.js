@@ -45,3 +45,23 @@ person = {
     }
 }
 person.myFunc({daughterName:"Alice", fatherName:'Dave', daughterAge:10});
+
+
+//Date Object
+var date = new Date(); //new Date("January 04, 1984") can set specific datetime
+console.log(date);
+
+//object is referring to a memory location
+var c = {
+    name: "Nick"
+};
+d = c  // c and d are referring to the same object
+c.name='Bob';
+console.log(d); //once c value changes, d value is also changed
+
+c = {
+    name: "John" 
+};
+//here we actually create a different object, thus a different memeory location
+//hence value of d will not change
+console.log(c);
