@@ -1,0 +1,164 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Above is reset style */
+
+
+.wrapper{
+    margin: 30px auto;
+    width: 90%;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    box-sizing: border-box; /* border-box ensures an element padding and border are included in the width and height */
+}
+
+input {
+    color: rgb(196, 38, 196);
+    border: 1px solid rgb(29, 10, 194)
+}
+
+header {
+    text-align: center;
+    background: rgba(11, 146, 7, 0.164);
+}
+header h2 {
+    padding: 40px 0 20px 0;
+    font-size: 75px;
+    color: #555
+}
+
+header #search-note input{
+    padding: 5px 2px;
+    width: 200px;
+    border-radius: 2px;
+    margin: 10px 0 40px 0;
+}
+
+.note-list {
+    list-style: none;
+    padding: 40px;
+}
+
+.note-list ul li {
+    padding: 5px;
+    margin-bottom: 10px;
+    border-bottom: 0.1px solid #ccc;
+    border-left: 5px solid #efefef;
+}
+
+.note-list ul li p:nth-child(2){
+    text-align: right;
+}
+
+.note-list ul li p i {
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.note-list ul li p i.fa-pencil-square-o{
+    color: #228B22;
+}
+
+.note-list ul li p i.fa-times{
+    color: #DC143C;
+}
+
+.note-list ul li input{
+
+    padding: 5px 0;
+    width: 70%;  /*width of the element relative to the page */
+    margin: 5px auto 0 auto /* left/right margin relative to page is auto */
+}
+
+#hide-list {
+    /* border-style: solid; */
+    /* border-width: 1px; */
+    margin: 20px;
+    /* padding: 10px; */
+}
+
+#hide-list label{
+    padding: 5px 10px;
+    margin: 10px;
+    border-bottom: 1px solid rgb(179, 218, 143);
+    user-select: none; /* word not highlightable*/
+}
+
+#hide-list label:hover {
+    background: rgb(179, 218, 143)
+}
+#hide-list input[type="checkbox"]{
+    display: none;
+}
+
+#add-notes {
+    padding: 60px 0;
+}
+
+form#add{
+    margin-top: 10px;
+    text-align: center;
+}
+form#add input{
+    border-radius: 3px;
+}
+form#add input[type="text"] {
+    padding: 5px 0 5px 2px;
+    width: 250px;
+}
+
+form#add input[type="submit"] {
+    padding: 5px 0;
+    width: 70px;
+    background: rgb(51, 180, 51);
+    color: #fff;
+}
+
+form#add input[type="submit"]:hover {
+    background: rgb(4, 87, 25);
+}
