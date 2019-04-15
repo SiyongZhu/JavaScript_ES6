@@ -57,6 +57,14 @@ table {
     box-sizing: border-box; /* border-box ensures an element padding and border are included in the width and height */
 }
 
+.changeBg{
+    background-color: rgb(13, 135, 165);
+}
+
+.changeFt{
+    font-style: italic;
+    font-size: 40px;
+}
 input {
     color: rgb(196, 38, 196);
     border: 1px solid rgb(29, 10, 194)
@@ -119,6 +127,7 @@ header #search-note input{
     /* border-style: solid; */
     /* border-width: 1px; */
     margin: 20px;
+    float:left
     /* padding: 10px; */
 }
 
@@ -134,6 +143,19 @@ header #search-note input{
 }
 #hide-list input[type="checkbox"]{
     display: none;
+}
+
+#man-dom{
+    margin: 20px;
+    float: right;
+}
+#man-dom label {
+    padding: 5px 10px; 
+    font-size: 25px;
+    color: rgb(209, 39, 39);
+}
+#man-dom label:hover {
+    background: rgb(179, 218, 143)
 }
 
 #add-notes {
@@ -162,3 +184,4 @@ form#add input[type="submit"] {
 form#add input[type="submit"]:hover {
     background: rgb(4, 87, 25);
 }
+
