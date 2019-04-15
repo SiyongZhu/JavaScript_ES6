@@ -29,7 +29,7 @@ var gender='male';
 
 if (gender === 'male'){
     console.log(myChild + 'is my son');
-}else if (gender == 'female'){
+}else if (gender === 'female'){
     console.log(myChild+' is my daughter');
 }else{
     console.log(myChild+' is gender neutral');

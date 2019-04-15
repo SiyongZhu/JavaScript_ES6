@@ -116,6 +116,10 @@ header #search-note input{
     color: #DC143C;
 }
 
+.note-list ul li input.edit-note{
+    display: none;
+}
+
 .note-list ul li input{
 
     padding: 5px 0;
