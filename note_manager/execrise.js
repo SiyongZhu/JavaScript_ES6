@@ -28,7 +28,6 @@ btnAddNote.addEventListener('click', function(e){
         secondPar.appendChild(firstIcon)
         secondPar.appendChild(secondIcon)
 
-
         newLi.append(firstPar)
         newLi.append(secondPar)
         newLi.append(newInput)
@@ -91,7 +90,7 @@ hideItem.addEventListener('click', function(e){
 
 var searchInput = document.querySelector('#search-note input')
 
-searchInput.addEventListener('keyup', function(e){ //key is oppsite of keypress
+searchInput.addEventListener('keyup', function(e){ //keyup is oppsite of keypress
     console.log(e.keyCode+' is released')
     var searchChar = e.target.value.toUpperCase()
     var notes = ul.getElementsByTagName('li')
