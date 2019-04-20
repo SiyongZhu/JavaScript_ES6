@@ -40,3 +40,39 @@ console.log(person5, person6)
 * etc etc
 *
 */
+
+
+//THere are call(), apply(), bind()
+
+var person = {
+    firstname: 'John',
+    lastname: 'Smith',
+    fullname: function(){
+        return this.firstname+' '+this.lastname
+    }
+}
+
+var definePerson = function(age, job) {
+    console.log(this.fullname()+' is '+age+' years old and he is a '+job)
+}
+//`this` keyword in definePerson
+//call() can passing in an object  
+//apply() works the same way, except it takes an array
+definePerson.call(person, 28, 'developer')
+definePerson.apply(person, [30, 'designer'])
+
+//bind() doesn't invoke function immedately, it creates a copy
+//so user need to invoke it
+//There are different ways bind() can work
+var getPerson = definePerson.bind(person)
+getPerson(19, 'student')
+var getPerson = definePerson.bind(person, 35, 'teacher')
+getPerson()
+var getPerson = definePerson.bind(person, 25)
+getPerson('musician')
+
+var nick = {
+    firstname: 'Nick',
+    lastname: 'Fury'
+}
+console.log(person.fullname.call(nick))
