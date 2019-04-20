@@ -22,6 +22,9 @@ console.log(person1, person2, person3, person4)
 function Person(firstname, lastname){
     this.firstname = firstname //`this` keyword
     this.lastname = lastname
+    this.getFullName = function(){
+        return this.firstname+" "+this.lastname
+    }
 }
 
 var person5 = new Person('Jon', 'Snow') //`new` defines Person creates a new object

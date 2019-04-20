@@ -18,3 +18,19 @@ funcObj.myFunc = function(){
     console.log('Hola')
 }
 console.log(window) //from window, you can see funcObj is both a function and object
+
+
+//Object.create() is a global function, you can see the function inside Object
+console.dir(Object)
+
+//we can create object using the create() menthod
+console.log("Object creation using Object.create()")
+var obj1 = Object.create(Object.prototype)
+console.log(obj1)
+//We can create the object with property name with the following format
+var obj2 = Object.create(Object.prototype, {
+    name: {
+        value: 'Dave'
+    }
+})
+console.log(obj2)
