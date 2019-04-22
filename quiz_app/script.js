@@ -12,6 +12,10 @@ let quizController = (function() {
         this.options = options
         this.correctAnswer = correctAnswer
     }
+
+    return {
+        addQuestionOnLocalStorage
+    }
 })()
 
 /************************************
